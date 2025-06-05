@@ -1,0 +1,67 @@
+============================
+Hotel Management Database
+============================
+
+This project contains SQL scripts for creating and running a hotel management system database. It includes table structures, constraints, sample data, and instructions.
+
+============================
+1. Requirements
+============================
+
+- MySQL Server or MariaDB
+- SQL client (e.g., MySQL Workbench, phpMyAdmin, or command-line tool)
+
+============================
+2. Setup Instructions
+============================
+
+1. Open your SQL client (MySQL Workbench, phpMyAdmin, etc.)
+
+2. Create a new database:
+   Example:
+   CREATE DATABASE hotel_db;
+
+3. Select the database:
+   USE hotel_db;
+
+4. Run the SQL DDL script to create all tables:
+   - Copy and paste the provided CREATE TABLE scripts (DDL) in hotel_booking.sql file.
+   - Execute the script to create the database schema.
+
+5. Insert sample data:
+   - Use the provided SQL INSERT statements to populate the database.
+   - This includes sample guests, bookings, rooms, payments, services, etc.
+
+============================
+3. Running Queries
+============================
+
+- You can test your database by running the provided 15+ SQL queries.
+- These demonstrate SELECT, JOIN, GROUP BY, subqueries, and more.
+
+============================
+4. Creating a Backup
+============================
+
+To export the database:
+
+Using MySQL Command Line:
+> mysqldump -u your_username -p hotel_db > backup.sql
+
+Using phpMyAdmin:
+- Select your database
+- Click on the "Export" tab
+- Choose "Quick" export and format as "SQL"
+- Click "Go" to download the .sql file
+
+============================
+5. Notes
+============================
+
+- Make sure MySQL is running before executing scripts.
+- No views, triggers, or stored procedures are included in this version.
+- All table and field names follow consistent naming conventions.
+
+============================
+Author: [Your Name]
+Date: [Insert Date]
